@@ -133,6 +133,7 @@
 				border: inset 2px rgba(19, 69, 103, 0.21);
 				box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.13);
 				border-radius: 3px;
+				box-sizing: border-box;
 				margin-bottom: 7px;
 				margin-right: 2px;
 				height: 30px;
@@ -142,17 +143,18 @@
 					family: "Myriad Pro";
 					size: 11px;
 				}
+				&::-webkit-input-placeholder /*,&::-moz-placeholder,&:-ms-input-placeholder,&:-moz-placeholder*/{
+					color: #4194d0;
+				}
 			}
-			#name{
-				width: 115px;
-			}
-			#mail{
-				width: 145px;
-			}
+			#name{width: 115px;}
+			#mail{width: 145px;}
 			textarea{
 				@extend input[type='text'];
 				width: 265px;
 				height: 64px;
+				resize: none;
+				padding-top: 12px;
 			}
 			input[type="submit"]{
 				float: right;
@@ -178,6 +180,7 @@
 			}
 			input[type="submit"]:after{
 				content: '';
+				display: inline-block;
 				position: absolute;
 				height: 15px;
 				width: 15px;
