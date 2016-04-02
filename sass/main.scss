@@ -1,0 +1,39 @@
+@import "head";
+@import "wrapper";
+@import "feet";
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	.container{
+		width: 1211px;
+		height: 433px;
+		background-color: white;
+		box-shadow: inherit;
+		font:{
+			family: "Open Sans";
+			size: 12px;
+		}
+	}
+}
+@font-face{
+	font-family: "Open Sans";
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: "Open Sans bold";
+	src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face{
+	font-family: "Open Sans light";
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face{
+	font-family: "Open Sans extrabold";
+	src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
